@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <style>
+        entity{
+            width: 280px; display: inline-block; text-align: left;
+            color:rgb(6, 6, 53); font-weight: bold;font-size: 14;
+        }
+        body{
+        margin: 0;
+        }
+    </style>
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript" src="http://localhost:8080/MiniProject/Registration.js"></script>
+<div style="background-color:silver;">
+    <h1 style="text-align:center; height: 95px;margin: 0;"><br>Registration</h1>
+    <hr size="3" style="background-color: black;">
+    </div>
+<div style="text-align:center;">
+    <h2 style="color:black;">Please enter below the information to Register!</h2>
+    <form method="post" action="#">
+        <entity>Name*</entity>
+        <input type="text" id="name" style="width: 240px;height: 25px;" required><br><br>
+        <entity>E-Mail Address*</entity>
+        <input type="email" id="email" style="width: 240px;height: 25px;" required><br><br>
+        <entity>Contact Number</entity>
+        <input type="text" id="contact" style="width: 240px;height: 25px;"><br><br>
+        <entity>Country</entity>
+        <input type="text" id="country" style="width: 240px;height: 25px;"><br><br>
+        <entity>Date of Birth</entity>
+        <input type="date" id="dob" style="width: 240px;height: 25px;"><br><br>
+        <entity>Password*</entity>
+        <input type="password" id="password" style="width: 240px;height: 25px;" onblur="checklength()" required ><br><br>
+        <entity>Confirm Password*</entity>
+        <input type="password" id="repassword" style="width: 240px;height: 25px;" required><br><br>
+        <input type="button" style="background-color: rgb(128, 255, 255); border-radius: 4px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0,19); height : 45px; width : 115px" name="register" value="Register" onclick="addmember()"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" style="background-color: rgb(128, 255, 255); border-radius: 4px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0,19); height : 45px; width : 115px" name="cancel" value="Cancel" onclick="homepage()"><br>
+    </form>
+</div>
+</body>
+</html>

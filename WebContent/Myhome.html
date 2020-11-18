@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <style type="text/css" rel="stylesheet">
+    .border{
+      border: solid;
+    }
+    </style>
+<style>
+        entity{
+            width: 280px; display: inline-block; text-align: left;
+            color:rgb(6, 6, 53); font-weight: bold;font-size: 14;
+        }
+#menu-bar {
+  width: 95%;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  height: 25px;
+  line-height: 100%;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  position:relative;
+}
+#menu-bar li {
+  margin: 0px 0px 6px 0px;
+  padding: 0px 6px 0px 6px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu-bar a {
+  font-weight: bold;
+  font-family: arial;
+  font-style: normal;
+  font-size: 12px;
+  color: #444444;
+  text-decoration: none;
+  display: block;
+  padding: 6px 10px 6px 10px;
+  margin: 0;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+#menu-bar li ul li a {
+  margin: 0;
+}
+#menu-bar .active a, #menu-bar li:hover > a {
+  background: #0399D4;
+  background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+  background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  color: #444444;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+#menu-bar ul li:hover a, #menu-bar li:hover li a {
+  background: none;
+  border: none;
+  color: cornflowerblue;
+  -box-shadow: none;
+}
+#menu-bar ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+  background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+#menu-bar li:hover > ul {
+  display: block;
+}
+#menu-bar ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: solid 1px #141b83;
+  border-radius: 6px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+}
+#menu-bar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#menu-bar ul a {
+  padding:8px 0px 8px 10px;
+  color:#0f46bb !important;
+  font-size:12px;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+}
+#menu-bar ul li:first-child > a {
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+}
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: contents;
+}
+.floatleft {
+    float:left;
+}
+.floatright {
+    float:right;
+}
+ body{
+        margin: 0;
+        }
+    </style>
+<title>Insert title here</title>
+
+<script type="text/javascript" src="http://localhost:8080/MiniProject/logoff.js"></script>
+</head>
+<body class="border"></br>
+<script type="text/javascript" src="http://localhost:8080/MiniProject/MyHome.js"></script>
+
+<!-- <div style="background-color:silver;">
+    <h1 style="text-align:center; height: 95px;margin: 0;"><br>Login</h1>
+    <hr size="3" style="background-color: black;">
+    </div>-->
+
+   <div style="background-color:silver; height: 95px;margin:0;"> 
+      <ul id="menu-bar">
+        <div class="floatleft">
+        <li><a href="#">MENU</a>
+         <ul>
+          <li><a href="http://localhost:8080/MiniProject/MainPage.html">Home</a></li>
+          <li><a href="http://localhost:8080/MiniProject/Myhome.html">My Profile</a></li>
+          <li><a href="http://localhost:8080/MiniProject/AddMedicalHistory.html">Medical History</a></li>
+         </ul>
+        </li>
+      </div>
+      <div class="floatMiddle"><h1 style="text-align: center;"><br>My Profile</h1></div>
+        <div class="floatright">
+        <li><input type="button" style="background-color: lightgray; border-radius: 4px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0,19); height : 45px; width : 115px" value="Log Out" onclick="logoff()"></li></div>
+       </ul>
+         <hr size="3" width="100%" style="background-color: black;"> 
+    </div>
+  
+<div>
+  <!--    <h1 style="text-align: center;">My Profile</h1>-->
+  <br><br>
+    <table border="cols" align="center" style="width: 90%;">
+ 
+    <tr>
+        <td align="center">
+          <div style="align-items: center;">
+            <form method="post" action="#">
+              <u><h2><span id="username"></span></h2></u><br><br><br><br><br><br>
+                <entity>Name</entity>
+                <input type="text" name="name" style="width: 235px; height:25px;" id="depname"><br><br>
+                <entity>E-Mail</entity>
+                <input type="email" name="email" style="width: 235px;height:25px;" id="depemail"><br><br>
+                <entity>Contact Number</entity>
+                <input type="text" name="contact" style="width: 235px;height:25px;" id="depcontact"><br><br>
+                <entity>Blood Group</entity>
+                <input type="text" name="bldgrp" style="width: 235px;height:25px;" id="depbldgrp"><br><br>
+                <entity>Date of Birth</entity>
+                <input type="date" name="dob" style="width: 235px;height:25px;" id="depdob"><br><br>
+                <entity>Weight</entity>
+                <input type="text" name="weight" style="width: 235px;height:25px;" id="depweight"><br><br>
+                <entity>Height</entity>
+                <input type="text" name="Height" style="width: 235px;height:25px;" id="depheight"><br><br>
+                <input type="button" style="background-color: lightgray; border-radius: 4px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0,19); height : 45px; width : 115px" value="Save" onclick="addDep()">&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+            </form>
+          </div>
+        </td>
+        <td align="center">
+            <div style="align-items: center;"><br><br>
+            <input type="button" name="Edit" style="background-color: lightgray; border-radius: 4px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0,19); height : 45px; width : 115px" value="Add Dependents" onclick="enable()" ><br><br>
+            <form method="post" action="#">
+            	<entity>View Dependent</entity>
+            	<select  name="relation" id="outrelation" style="width: 235px; height:25px;"><br>
+                <option value="Self">Self</option>
+                <option value="Mother">Mother</option>
+                <option value="Father">Father</option>
+                <option value="Spouse">Spouse</option>
+                <option value="Son">Son</option>
+                <option value="Daughter">Daughter</option>
+                <option value="Mother-in-law">Mother-in-law</option>
+                <option value="Father-in-law">Father-in-law</option>
+                </select><br> 
+                </form>
+                </br> 
+              <input type="submit" name="Show Details" style="background-color: lightgray; border-radius: 4px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0,19); height : 45px; width : 115px" value="View Dependents" onclick="displayDep()">
+              </div>
+              <form action="">
+               <div style="align-items: center;"><br>
+                <entity>Relationship</entity>
+                <select  name="relation" id="outrelationship" style="width: 235px; height:25px;" disabled="disabled">
+                <option value="Mother">Mother</option>
+                <option value="Father">Father</option>
+                <option value="Spouse">Spouse</option>
+                <option value="Son">Son</option>
+                <option value="Daughter">Daughter</option>
+                <option value="Mother-in-law">Mother-in-law</option>
+                <option value="Father-in-law">Father-in-law</option>
+                </select><br><br>
+                <entity>Name</entity>
+                <input type="text" name="name" style="width: 235px; height:25px;" id="outname" disabled="disabled" ><br><br>
+                <entity>E-Mail Address</entity>
+                <input type="text" name="email" style="width: 235px; height:25px;" id="outemail" disabled="disabled"><br><br>
+                <entity>Contact Number</entity>
+                <input type="text" name="contact" style="width: 235px; height:25px;" id="outcontact" disabled="disabled"><br><br>
+                <entity>Blood Group</entity>
+                <input type="text" name="bldgrp" style="width: 235px; height:25px;" id="outbldgrp" disabled="disabled"><br><br>
+                <entity>Date of Birth</entity>
+                <input type="date" name="dob" style="width: 235px; height:25px;" id="outdob" disabled="disabled"><br><br>
+                <entity>Weight</entity>
+                <input type="text" name="weight" style="width: 235px; height:25px;" id="outweight" disabled="disabled"><br><br>
+                <entity>Height</entity>
+                <input type="text" name="Height" style="width: 235px; height:25px;" id="outheight" disabled="disabled"><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                 <input type="submit" style="background-color: lightgray; border-radius: 4px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0,19); height : 45px; width : 115px" value="Save Details" onclick="addDependent()">
+                <br><br></form>
+        </div>
+        </td>
+    </tr>
+</table>
+<br><br>
+</div>
+
+</body>
+</html>
