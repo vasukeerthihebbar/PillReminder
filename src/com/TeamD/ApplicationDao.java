@@ -240,7 +240,7 @@ public class ApplicationDao extends DataConnector implements DaoInterface{
 		}
 	}
 
-	public MedicalHistory ViewMedicalHistory(MedicalHistory viewMed) {
+	public MedicalHistory ViewMedicalHistory(ViewMedicalHistory viewMed) {
 		// TODO Auto-generated method stub
 		MedicalHistory mh=null;
 		String userMail=viewMed.getEmail();
